@@ -2,29 +2,24 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello World! This is the Exercise5 Project.");
-        Console.WriteLine();
+        static void Main(string[] args)
 
-
-        
         {
-            DisplayWelcomeMessage();
+            DisplayWelcome();
 
-            string name = PromptUserName();
+            string UserName = PromptUserName();
 
-            int number = PromptUserNumber();
+            int UserNumber = PromptUserNumber();
 
-            int squaredNumber = SquareNumber(number);
+            int squaredNumber = SquareNumber(UserNumber);
 
-            DisplayResult(name, squaredNumber);
+            DisplayResult(UserName, squaredNumber);
 
 
         }
 
 
-        static void DisplayWelcomeMessage()
+        static void DisplayWelcome()
         {
             Console.WriteLine("Welcome to the program!");
         }
@@ -55,5 +50,5 @@ class Program
         }
 
 
-    }
+    
 }
