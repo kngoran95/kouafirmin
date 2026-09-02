@@ -14,7 +14,7 @@ class Program
 
         Random randomGenerator = new Random();
 
-        int magicNumberGenerated = randomGenerator.Next(1, 100);
+        int magicNumberGenerated = randomGenerator.Next(1, 101);
 
         int userGuess = -1;
 
