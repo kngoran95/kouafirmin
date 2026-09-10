@@ -18,6 +18,7 @@ class Program
 
         while (choice != 5)
         {
+            Console.WriteLine("personal journal");
             Console.WriteLine("1. Write a new entry");
             Console.WriteLine("2. Display the journal");
             Console.WriteLine("3. Save the journal");
@@ -80,7 +81,7 @@ class Program
                 Console.WriteLine("Good Bye!");
                 break;
 
-                
+
             }
         }
         Entry anEntry = new Entry();
