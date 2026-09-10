@@ -9,6 +9,15 @@ class Program
 
 
         Journal theJournal = new Journal();
+
+        PromptGenerator thePromptGenerator = new PromptGenerator();
+
+        int choice = 0;
+
+        while (choice != 5)
+        {
+            
+        }
         Entry anEntry = new Entry();
         anEntry.Display();
     }
