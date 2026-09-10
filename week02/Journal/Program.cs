@@ -35,6 +35,11 @@ class Program
 
                 Console.WriteLine(prompt);
 
+                //Save other information in the journal entry.
+
+                string mood = Console.ReadLine();
+                string weather = Console.ReadLine();
+
 
                 string response = Console.ReadLine();
 
@@ -43,6 +48,9 @@ class Program
                 theEntry._date = DateTime.Now.ToShortDateString();
                 theEntry._promptText = prompt;
                 theEntry._entryText = response;
+                theEntry._mood = mood;
+                theEntry._weather = weather;
+
 
                 theJournal.AddEntry(theEntry);
 
@@ -69,9 +77,9 @@ class Program
                 case 4:
 
                 Console.Write("Name of file: ");
-                string loadFile = Console.ReadLine();
+                string fileName = Console.ReadLine();
 
-                theJournal.LoadFromFile(loadFile);
+                theJournal.LoadFromFile(fileName);
                 Console.WriteLine("Load journal.");
                 break;
 

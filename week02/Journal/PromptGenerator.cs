@@ -11,7 +11,9 @@ public class PromptGenerator
         "Who helped I today?",
         "What did I learn today?",
         "What challenge did I overcome today?",
-        "How did I see the hand of the Lord in my life today?"
+        "How did I see the hand of the Lord in my life today?",
+        "How are you feeling today?",
+        "What is the weather like today?"
     };
 
     private Random _random = new Random();
