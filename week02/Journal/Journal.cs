@@ -35,6 +35,13 @@ public class Journal
 
     public void LoadFromFile(string fileName)
     {
+
+        if (File.Exists(fileName))
+        {
+            Console.WriteLine("File not found");
+            return;
+        }
+
         _entries.Clear();
         
         string[] lines = File.ReadAllLines(fileName);
@@ -43,12 +50,19 @@ public class Journal
         {
             string[] parts = line.Split('|');
 
-            if (parts.Length == 3)
+            if (parts.Length == 5)
             {
-                Entry entry = new Entry();
-                entry._date = parts[0];
-                entry._promptText = parts[1];
-                entry._entryText = parts[2];
+
+                
+                Entry entry = new Entry
+                {
+                    _date = parts[0],
+                    _promptText = parts[1],
+                    _entryText = parts[2],
+                    _mood = parts[3],
+                    _weather = parts[4],
+                };
+                
 
                 _entries.Add(entry);
             }

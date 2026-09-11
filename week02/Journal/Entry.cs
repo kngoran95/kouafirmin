@@ -5,6 +5,7 @@ public class Entry
 {
 
     //Save other information in the journal entry.
+    // I added two entries to check on the mood and the weather.
     public string _mood;
     public string _weather;
 
