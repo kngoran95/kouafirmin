@@ -35,12 +35,15 @@ class Program
 
                 Console.WriteLine(prompt);
 
-                //Save other information in the journal entry.
+            
 
+                Console.Write("Mood: ");
                 string mood = Console.ReadLine();
+
+                Console.Write("Weather: ");
                 string weather = Console.ReadLine();
 
-
+                Console.Write("Response: ");
                 string response = Console.ReadLine();
 
 
